@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo.png">
-    <title>Pricing</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Pricing</title>
 </head>
-    <body onload="startTime()">
 
-<h2>time</h2>
+<body onload="startTime()">
 
-<div id="txt"></div>
+  <h2>time</h2>
 
-<script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-  setTimeout(startTime, 1000);
-}
+  <div id="txt"></div>
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
+  <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
 
 </body>
+
 <body>
-    <nav>
-      <a href="./index.html" class="brand-logo">Edu Code</a>
-      <ul class="links">
-        <li class="link">
-           <a href="./index.html">Home</a> </b>
-        </li>
-        <li class="link"> <b><a href="./pricing.html" style="color: #ffffff">Pricing</a></b></li>
-        
-      </ul>
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </nav>
-    <section id="header">
-        <div class="container">
-            <!--<img src="img/logo.png" alt="logo" class="logo">-->
-            <h1>Edu Code</h1>
-            <br>
-            <h2>Pricing</h2>
-        </div>
-        
-    </section>
+  <nav>
+    <a href="./index.html" class="brand-logo">Edu Code</a>
+    <ul class="links">
+      <li class="link">
+        <a href="./index.html">Home</a> </b>
+      </li>
+      <li class="link"> <b><a href="./pricing.html" style="color: #ffffff">Pricing</a></b></li>
 
-    <!-- TODO : Gotta build the this page -->
-    
+    </ul>
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+  <section id="header">
+    <div class="container">
+      <!--<img src="img/logo.png" alt="logo" class="logo">-->
+      <h1>Edu Code</h1>
+      <br>
+      <h2>Pricing</h2>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/app.js"></script>
+  </section>
+
+  <!-- TODO : Gotta build the this page -->
+
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
